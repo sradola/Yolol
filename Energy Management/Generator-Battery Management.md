@@ -8,7 +8,7 @@ if :Battery_1>9950 then Generator=0 goto 1 end goto 3
 **Variablen Info**
 |Variable|Beschreibung|
 |---|---|
-|ChargeMode|Aktureller Lademodus|
+|ChargeMode|Aktueller Lademodus|
 |Offset|Untere Grenze Batterie|
 
 **Funktion**<br>
