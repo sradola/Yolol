@@ -3,8 +3,8 @@
 ```Pascal
 Mat="" Vol="" n="\n" i=1 C="Crystal" O="Ore" :Scan=1
 If :ScanOn and :Scan==1 and i<5 then i++ goto2 end
-If :ScanIdx<:ScanRsl then :ScanIdx++ goto4 else goto5 end
-Mat+=n+:ScanM-O-C Vol+=n+:ScanV goto3
+If :ScanIdx<:ScanRsl then goto4 else goto5 end
+Mat+=n+:ScanM-O-C Vol+=n+:ScanV :ScanIdx++ goto3
 If :ScanOn==0 then Mat=n+"OFF" Vol=n+"OFF" end
 :Material=Mat :Volume=Vol goto1
 ```
@@ -36,9 +36,9 @@ Beide Panels am besten nebeneinander<br>
 Das erste Panel 
 |Original|New|
 |---|---|
-|PanelValue|Mat|
+|PanelValue|Material|
 
 Das zweite Panel
 |Original|New|
 |---|---|
-|PanelValue|Vol|<br>
+|PanelValue|Volume|<br>
