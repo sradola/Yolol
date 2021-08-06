@@ -1,10 +1,10 @@
 # Ore Scanner
 **Yolol code:**
 ```Pascal
-If :ScanOn==1 then :Scan=1 Mat="" Vol="" i=1 end goto 5
+If :ScanOn==1 then :Scan=1 Mat="\n" Vol="\n" i=1 end goto 5
 If :Scan==1 and :ScanOn==1 then goto 2 end 
 If :ScanIdx<:ScanRsl then goto 4 end goto 6
-Mat+=("\n"+:ScanM) Vol+=("\n"+:ScanV) ScanIdx++ goto 3
+Mat+=(:ScanM+"\n") Vol+=(:ScanV+"\n") ScanIdx++ goto 3
 Mat="OFF" :Vol="Off" goto 7
 if i<20 then i++ end
 :Material=Mat :Vol=Vol goto 1
