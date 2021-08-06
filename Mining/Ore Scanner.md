@@ -9,9 +9,8 @@ If :ScanOn==0 then Mat=n+"OFF" Vol=n+"OFF" end
 :Material=Mat :Volume=Vol goto1
 ```
 # Funktion
-Sobald der Taster ScanOn aktiviert wird, schaltet sich der Material Pont Scanner ein und Triggert ungefähr alle 10 Sekunden einen erneuten Scanvorgang.<br>
-Die Variable i sorgt dafür, dass nach 10s der Scanner erneut getriggert wird (Schleife funktioniert folgend: `20*0.2s+1s bis zur Zeile`)<br>
-Für jedes neue Erz wird eine neue Zeile geschrieben.
+Sobald der Taster ScanOn aktiviert wird, schaltet sich der Material Pont Scanner ein und fängt an zu Scannen.<br>
+Für jedes neue gefundene Erz wird eine neue Zeile geschrieben.
 
 # Hardware Setup
 **Material Point Scanner:**
