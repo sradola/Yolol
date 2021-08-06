@@ -1,13 +1,12 @@
 # Ore Scanner
 **Yolol code:**
 ```Pascal
-If :ScanOn==1 then :Scan=1 Mat="\n" Vol="\n" i=1 end goto 5
-If :Scan==1 and :ScanOn==1 then goto 2 end 
-If :ScanIdx<:ScanRsl then goto 4 end goto 6
-Mat+=(:ScanM+"\n") Vol+=(:ScanV+"\n") ScanIdx++ goto 3
-Mat="OFF" :Vol="Off" goto 7
-if i<20 then i++ end
-:Material=Mat :Vol=Vol goto 1
+Mat="" Vol="" n="\n" i=1 C="Crystal" O="Ore" :Scan=1
+If :ScanOn and :Scan==1 and i<5 then i++ goto2 end
+If :ScanIdx<:ScanRsl then :ScanIdx++ goto4 else goto5 end
+Mat+=n+:ScanM-O-C Vol+=n+:ScanV goto3
+If :ScanOn==0 then Mat=n+"OFF" Vol=n+"OFF" end
+:Material=Mat :Volume=Vol goto1
 ```
 # Funktion
 Sobald der Taster ScanOn aktiviert wird, schaltet sich der Material Pont Scanner ein und Triggert ungefähr alle 10 Sekunden einen erneuten Scanvorgang.<br>
