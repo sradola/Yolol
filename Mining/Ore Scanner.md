@@ -11,7 +11,7 @@ if i<20 then i++ end
 ```
 # Funktion
 Sobald der Taster ScanOn aktiviert wird, schaltet sich der Material Pont Scanner ein und Triggert ungefähr alle 10 Sekunden einen erneuten Scanvorgang.<br>
-Die Variable i sorgt dafür, dass nach 10s der Scanner erneut getriggert wird (Schleife wird `20*0.2s+1s bis zur Zeile`)<br>
+Die Variable i sorgt dafür, dass nach 10s der Scanner erneut getriggert wird (Schleife funktioniert folgend: `20*0.2s+1s bis zur Zeile`)<br>
 Für jedes neue Erz wird eine neue Zeile geschrieben.
 
 # Hardware Setup
